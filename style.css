@@ -33,14 +33,14 @@ section {
   padding: 40px 50px;
 }
 
-section>h1 {
+section>div>h1 {
   text-transform: uppercase;
   font-family: 'Big Shoulders Display', cursive;
   color: var(--primary);
   margin: 25px 0;
 }
 
-section>p {
+section>div>p {
   font-family: 'Lexend Deca', sans-serif;
   color: var(--paragraphe);
   font-size: 15px;
@@ -122,15 +122,18 @@ footer a:hover {
 
   section {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  section>p {
+  section>div>p {
     line-height: 175%;
   }
 
   section>button {
-    margin-top: 40%
+    margin-top: 45%;
   }
 
   .sedans {
