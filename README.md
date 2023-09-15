@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-component-using-css-grid-3MCmlSQaOx)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor---3-column-preview-card-component-solution/)
 
 ## My process
 

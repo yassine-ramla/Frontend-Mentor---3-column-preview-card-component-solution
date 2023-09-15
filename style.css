@@ -17,10 +17,13 @@ body {
   height: fit-content;
   padding: 60px 5%;
   background-color: var(--primary);
+  display: grid;
+  place-items: center;
 }
 
 main {
   width: 100%;
+  max-width: 500px;
   height: fit-content;
 }
 
@@ -41,6 +44,7 @@ section>p {
   font-family: 'Lexend Deca', sans-serif;
   color: var(--paragraphe);
   font-size: 15px;
+  line-height: 150%;
 }
 
 section>button {
@@ -101,19 +105,11 @@ footer a:hover {
   color: var(--blue);
 }
 
-section>button {
-  background-color: transparent;
-  outline: 2px solid var(--primary);
-  color: var(--primary) !important;
-}
-
 @media (min-width: 800px) {
   body {
     width: 100vw;
     height: 100svh;
     padding: 20px;
-    display: grid;
-    place-items: center;
   }
 
   main {
@@ -127,6 +123,10 @@ section>button {
   section {
     width: 100%;
     min-height: 100%;
+  }
+
+  section>p {
+    line-height: 175%;
   }
 
   section>button {
