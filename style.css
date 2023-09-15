@@ -1,0 +1,147 @@
+:root {
+  --primary: hsl(0, 0%, 95%);
+  --orange: hsl(31, 77%, 52%);
+  --blue: hsl(184, 100%, 22%);
+  --green: hsl(179, 100%, 13%);
+  --paragraphe: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: fit-content;
+  padding: 60px 5%;
+  background-color: var(--primary);
+}
+
+main {
+  width: 100%;
+  height: fit-content;
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  padding: 40px 50px;
+}
+
+section>h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--primary);
+  margin: 25px 0;
+}
+
+section>p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--paragraphe);
+  font-size: 15px;
+}
+
+section>button {
+  border: none;
+  background-color: var(--primary);
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin-top: 25px;
+  color: transparent;
+  transition: 200ms;
+}
+
+section>button:hover {
+  background-color: transparent;
+  outline: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.sedans {
+  background-color: var(--orange);
+  border-radius: 8px 8px 0 0;
+}
+
+.sedans>button {
+  color: var(--orange);
+}
+
+.suvs {
+  background-color: var(--blue);
+}
+
+.suvs>button {
+  color: var(--blue);
+}
+
+.luxury {
+  background-color: var(--green);
+  border-radius: 0 0 8px 8px;
+}
+
+.luxury>button {
+  color: var(--green);
+}
+
+footer {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+footer a:hover {
+  color: var(--blue);
+}
+
+section>button {
+  background-color: transparent;
+  outline: 2px solid var(--primary);
+  color: var(--primary) !important;
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 100vw;
+    height: 100svh;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+  }
+
+  main {
+    width: fit-content;
+    max-width: 925px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  section {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  section>button {
+    margin-top: 40%
+  }
+
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+
+  footer {
+    display: block;
+  }
+}
