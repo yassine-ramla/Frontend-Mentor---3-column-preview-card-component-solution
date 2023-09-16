@@ -14,7 +14,7 @@
 
 body {
   width: 100vw;
-  height: fit-content;
+  min-height: 100svh;
   padding: 60px 5%;
   background-color: var(--primary);
   display: grid;
@@ -91,8 +91,7 @@ section>button:hover {
 
 footer {
   display: none;
-  position: absolute;
-  bottom: 10px;
+  margin-top: 20px;
   color: #333;
 }
 
@@ -108,7 +107,6 @@ footer a:hover {
 @media (min-width: 800px) {
   body {
     width: 100vw;
-    height: 100svh;
     padding: 20px;
   }
 
